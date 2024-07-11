@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            font-family: 'Sono', sans-serif;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        span {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 2rem;
+        }
+        button {
+            background-color: #110a1b; /* Initial color */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
+        }
+        button:hover {
+            background-color: #03dac5; /* Hover color */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            transform: scale(1.05);
+        }
+        button:active {
+            background-color: #018786; /* Active (click) color */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transform: scale(0.95);
+        }
+        .container, .two, .three {
+            background-color: #ffd58e;
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+            }
+            .container, .two, .three {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Basic</h1>
+        <p><span>&#9989; $11.22/month</span></p>
+        <p>&#9989; 10GB</p>
+        <p>&#9989; One user</p>
+        <button>Sign up</button>
+    </div>
+    <div class="two">
+        <h1>Standard</h1>
+        <p><span>&#9989; $22.22/month</span></p>
+        <p>&#9989; 50GB</p>
+        <p>&#9989; Three users</p>
+        <button>Sign up</button>
+    </div>
+    <div class="three">
+        <h1>Premium</h1>
+        <p><span>&#9989; $33.33/month</span></p>
+        <p>&#9989; 100GB</p>
+        <p>&#9989; Five users</p>
+        <button>Sign up</button>
+    </div>
+</body>
+</html>
